@@ -8,22 +8,20 @@
  */
 int main(void)
 {
-	int letter;
-	for (letter = 'a'; letter <= 'z'; letter++)
+	int ch = 'a';
+	int CH = 'A';
+
+	while (ch <= 'z')
 	{
-		letter = tolower(letter);
-		putchar(letter);
-		if (letter == 'z')
+		putchar(ch);
+		ch++;
+	}
+	while (CH <= 'Z')
 	{
-		letter = 'A';
-		for (; letter <= 'Z'; letter++)
-	{
-		putchar(letter);
+		putchar(CH);
+		CH++;
 	}
-		break:
-	}
-	}
+	
 	putchar('\n');
 	return (0);
 }
-
