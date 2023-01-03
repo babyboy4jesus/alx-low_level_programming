@@ -1,21 +1,22 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _memset - replace n characters with b
- * @s: memory address for the string value
- * @b: the value to replace the chars
- * @n: the number of chars to replace
+ * _memset - fills memory with a constant byte.
+ * fills the first n bytes of the memory area pointed
+ * to by s with the constant b
+ * @s: pointer to memory area.
+ * @b: constant to fill memory with
+ * @n: bytes of the momeory area to be filled.
  *
- * Description: only (n) chars are replaced
- * Return: Always(0) Success
+ * Return: pointer to memory area s.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	char *src = (char *)s;
+	unsigned int counter;
 
-	for (i = 0; i < n; i++)
-		src[i] = b;
-
-	return (src);
+	for (counter = 0; counter < n; counter++)
+	{
+		s[counter] = b;
+	}
+	return (s);
 }
