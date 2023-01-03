@@ -23,14 +23,14 @@ char *_strstr(char *haystack, char *needle)
 		{
 			x = i, j = 0;
 
-			while 9needle[j] != '\0')
+			while (needle[j] != '\0')
 			{
-				iof (haystack[x] == needle[j])
-					x++, j++;
+				if (haystack[x] == needle[j])
+				x++, j++;
 
 				else
-					break;
-			} /* if matched thrpughput, return haystack */
+				break;
+			} /* if matched throughout, return haystack */
 
 			if (needle[j] == '\0')
 			{
