@@ -1,4 +1,4 @@
-include "main.h"
+include "holberton.h"
 
 /**
  * _puts_recursion - this is a function to print string recursively
