@@ -1,1 +1,2 @@
 Static readme
+Static readme
